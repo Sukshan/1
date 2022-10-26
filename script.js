@@ -8,6 +8,9 @@ function resetom() {
 	for(var i=0; i<ele.length; i++){
 		ele[i].checked= false;
 	}
+	event.preventDefault();
+}
 
+function stop_reload(){
 	event.preventDefault();
 }

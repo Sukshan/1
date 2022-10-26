@@ -10,7 +10,7 @@
 		document.getElementById("heading1").innerHTML = "PLAYER INFORMATION FORM: ";
 	</script> -->
 
-	<form>
+	<form id="iniregform">
 
 		<label for="fname">First name:&nbsp&nbsp&nbsp&nbsp</label>
 		<input type="text" name="fname" id="fname"><br>
@@ -22,24 +22,29 @@
 
 		<br>
 		<label for="gender">Gender:</label><br>
-		<input type="radio" name="Gender" id="Male" value="Male">
+		<input type="radio" name="Gender" id="Male">
 		<label for="Male">Male</label><br>
-		<input type="radio" name="Gender" id="Female" value="Female">
+		<input type="radio" name="Gender" id="Female">
 		<label for="Female">Female</label><br>
-		<input type="radio" name="Gender" id="nbinary" value="nbinary">
+		<input type="radio" name="Gender" id="nbinary">
 		<label for="nbinary">Non-binary</label><br>
-		<input type="radio" name="Gender" id="other" value="other">
+		<input type="radio" name="Gender" id="other">
 		<label for="other">other</label><br>
 
-		<button name="Reset selection" id="Reset_button_1" onclick="resetom()">Reset</button>
+		<button name="Reset selection" id="Reset_button_1" onclick="resetom(); stop_reload()">Reset</button>
 
 
 		<br><br>
 		<label for="age">Age:&nbsp&nbsp&nbsp&nbsp</label>
 		<input type="text" name="age" id="age"><br>
 		<br>
-		<input type="submit" name="submit">
+		<input type="submit" name="submit" onclick="stop_reload()">
+		<button name="Reset form" id="Reset form">Reset</button>
 
+		<br>
+		<br>
+
+		<a href="">Click here to start the game</a>
 
 
 
