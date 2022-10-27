@@ -23,7 +23,6 @@ nav ul{
 
 
 .gamecontainer{
-	background-color: rgb(77, 87, 96);
 	display: flex;
 	justify-content: center;
 	margin-top: 50px;
@@ -39,8 +38,42 @@ nav ul{
 	border: 2px solid black;
 	font-size: 8vw;
 	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .box:hover{
-	background-color: rgb(70, 78, 88);
+	background-color: rgb(155, 125, 186);
+}
+
+.imagebox img{
+	display: none;
+}
+
+
+.gameinfo{
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+}
+
+#first_heading{
+	text-align: center;
+	font-family: 'Roboto';
+	color: red;
+	padding: 20px;
+}
+
+.bl-0{
+	border-left: 0;
+}
+.br-0{
+	border-right: 0;
+}
+.bt-0{
+	border-top: 0;
+}
+.bb-0{
+	border-bottom: 0;
 }
