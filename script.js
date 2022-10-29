@@ -46,4 +46,3 @@ Array.from(boxes).forEach(element =>{
 		}
 	})
 })
-
